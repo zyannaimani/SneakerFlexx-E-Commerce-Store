@@ -1,0 +1,107 @@
+
+    {%- assign collection = collections[section.settings.collection] -%}
+
+    <section class="products-row">
+        <div class="container">
+            <a href="{{collection.url}}" class="brand-title">
+                {{collection.title}}
+            </a>
+            <div class="products-row-content">
+                <div class="products-grid">
+                    {% for product in collection.products limit: section.settings.max_products%}
+                    <div class="product-info">
+                        <a href="{{product.url}}">
+                            <img class="product-img" src="{{product.featured_image | img_url: "200x"}}">
+                        </a>
+                        <a href="{{product.url}}" class="product-title">{{product.title}}</a>
+                        <a href="{{product.url}}" class="product-price">{{product.price | money_with_currency}}</a>
+                   </div>
+                   {% endfor%}
+                </div>
+                <a href="{{collection.url}}" class="products-brand-btn btn">Search More <br>{{collection.title}}</a>
+            </div>
+        </div>
+    </section>
+  
+    {% if section.settings.show_view_all %}
+      <hr class="hr--invisible" aria-hidden="true" />
+      <div class="text-center">
+        <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+          {{ 'collections.general.view_all' | t }}
+        </a>
+      </div>
+    {% endif %}
+  
+  </div>
+  
+  
+  
+  {% schema %}
+  {
+    "name": "products_group",
+    "class": "index-section",
+    "settings": [
+      {
+        "id": "collection",
+        "type": "collection",
+        "label": {
+          "da": "Kollektion",
+          "de": "Kategorie",
+          "en": "Collection",
+          "es": "Colección",
+          "fi": "Kokoelma",
+          "fr": "Collection",
+          "hi": "कलेक्शन",
+          "it": "Collezione",
+          "ja": "コレクション",
+          "ko": "컬렉션",
+          "nb": "Samling",
+          "nl": "Collectie",
+          "pt-BR": "Coleção",
+          "pt-PT": "Coleção",
+          "sv": "Produktserie",
+          "th": "คอลเลกชัน",
+          "zh-CN": "收藏",
+          "zh-TW": "商品系列"
+        }
+      },
+      {
+        "type": "range",
+        "id": "max_products",
+        "label": "Maximum of Products",
+        "min": 3,
+        "max": 6,
+        "step": 1,
+        "default": 6
+      }
+    ],
+    "presets": [
+      {
+        "name": "Products Group",
+        "category": {
+          "da": "Kollektion",
+          "de": "Kategorie",
+          "en": "Collection",
+          "es": "Colección",
+          "fi": "Kokoelma",
+          "fr": "Collection",
+          "hi": "कलेक्शन",
+          "it": "Collezione",
+          "ja": "コレクション",
+          "ko": "컬렉션",
+          "nb": "Samling",
+          "nl": "Collectie",
+          "pt-BR": "Coleção",
+          "pt-PT": "Coleção",
+          "sv": "Produktserie",
+          "th": "คอลเลกชัน",
+          "zh-CN": "收藏",
+          "zh-TW": "商品系列"
+        }
+      }
+    ]
+  }
+  {% endschema %}
+  
+
+

@@ -1,0 +1,54 @@
+<section class="discount-banner">
+    <div class="discount-overlay"></div>
+    <div class="discount-content">
+        {%if section.settings.discount_bg_img != blank%}
+            <img src="{{section.settings.discount_bg_img | img_url:'900x500'}}" style="background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; width: 100%; height: 100%; opacity:.4;">
+        {%else%}
+            <img src="{{"discount-bg.jpg"|asset_url}}" style="background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; width: 100%; height: 100%; opacity:.4;">
+        {%endif%}
+        <div class="container">
+            <p class="discount-content-text1">{{section.settings.discount_line_1}}</p>
+            <p class="discount-content-text2">{{section.settings.discount_line_2}}</p>
+            <p class="discount-content-text3">{{section.settings.discount_line_3}}</p>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Discount Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "discount_bg_img",
+      "label": "Discount Background Image"
+    },
+    {
+      "type":      "text",
+      "id":        "discount_line_1",
+      "label":     "Discount Line 1",
+      "default":   "Members Get 20% OFF"
+   },
+   {
+    "type":      "text",
+    "id":        "discount_line_2",
+    "label":     "Discount Line 2",
+    "default":   "Full-Price Items!"
+ },
+    {
+    "type":      "text",
+    "id":        "discount_line_3",
+    "label":     "Discount Line 3",
+    "default":   "Free $20 Gift Card w/Subscription"
+ } 
+  ],
+  "presets": [
+    {
+      "name": "Discount Banner",
+      "category":"Image"
+    }
+  ]
+}
+{% endschema %}

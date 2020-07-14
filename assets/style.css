@@ -1,0 +1,1493 @@
+/*-----GLOBAL STYLES-----*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+  max-width: 1824px;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+/*-----HEADER STYLES-----*/
+header nav {
+  padding: 9px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  background: #070806;
+}
+
+header nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  align-items: center;
+}
+
+header nav .container .logo {
+  font-family: 'Piedra', cursive;
+  color: #FFE816;
+  font-size: 1.6rem;
+  margin-right: 15px;
+}
+
+header nav .container .desktop-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+            align-items: center;
+}
+
+header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link {
+  padding: 20px;
+  letter-spacing: .5px;
+  color: white;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link:hover {
+  color: red;
+}
+
+header nav .container .desktop-menu .right-of-nav .right-nav {
+  padding: 0px 10px;
+  display: flex;
+}
+
+
+header nav .container .desktop-menu .right-of-nav .nav-icon {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+header nav .container .desktop-menu .right-of-nav .nav-bars {
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+/*-----JUMBO STYLES-----*/
+.jumbo {
+  position: relative;
+  background: #070806;
+  padding: 133px 0 0px 0;
+  height: 90vh;
+}
+
+.jumbo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.jumbo .container .jumbo-img{
+  height: 350px;
+}
+
+.jumbo .container .jumbo-content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.jumbo .container .jumbo-content-wrap .jumbo-title {
+  color: white;
+  font-size: 4.4rem;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  letter-spacing: 0;
+  padding: 20px;
+}
+
+.jumbo .container .jumbo-content-wrap .jumbo-title .jumbo-title-span {
+  font-family: 'Rock Salt', cursive;
+}
+
+.jumbo .container .jumbo-content-wrap .jumbo-btn {
+  padding: 30px 40px;
+  background: #E90046;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  border-radius: 70px;
+}
+
+.jumbo .container .jumbo-content-wrap .jumbo-btn:hover {
+  background: white;
+  color: #E90046;
+}
+
+.jumbo .bottom-imgs-wrap {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 10rem;
+}
+
+.jumbo .bottom-imgs-wrap .bottom-imgs-relative {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs-overlay {
+  position: absolute;
+  background: rgba(199, 176, 45, 0.404);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs {
+  width: 220px;
+}
+
+.shopify-section{
+  padding: 0;
+}
+
+
+/*-----PRODUCTS ROW STYLES-----*/
+.products-row {
+  margin-top: 100px;
+}
+
+.products-row .container .brand-title {
+  font-size: 6rem;
+  color: #ababab;
+}
+
+.products-row .container .products-row-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-row .container .products-row-content .products-grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products-row .container .products-row-content .products-grid .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.products-row .container .products-row-content .products-grid .product-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #474747;
+  height: 50px;
+}
+
+.products-row .container .products-row-content .products-grid .product-price {
+  font-size: 1.5rem;
+}
+
+.products-row .container .products-row-content .products-brand-btn {
+  background-color: #e7507d;
+  padding: 10px 75px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  letter-spacing: 0;
+  transition: all 0.7s ease-in-out;
+
+}
+
+.products-row .container .products-row-content .products-brand-btn:hover {
+  background: white;
+  color: #e7507d;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+
+/*-----DISCOUNT BANNER ROW STYLES-----*/
+
+.discount-banner {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-top: 113px;
+}
+
+.discount-banner .discount-overlay {
+  background: rgba(21, 21, 21, 0.66);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.discount-banner .discount-overlay {
+  background: rgb(21, 21, 21);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.discount-banner .discount-content {
+  position: relative;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.discount-banner .discount-content .container {
+  width: 85%;
+  text-align: center;
+  position: relative;
+}
+
+.discount-banner .discount-content .container .discount-content-text1 {
+  color:white;
+  font-size: 5.2rem;
+}
+
+.discount-banner .discount-content .container .discount-content-text2 {
+  color:white;
+  font-size: 5.3rem;
+}
+
+.discount-banner .discount-content .container .discount-content-text3 {
+  color:white;
+  font-size: 3.4rem;
+}
+
+/*-----FOOTER STYLES-----*/
+footer {
+  margin-top: 75px;
+  padding: 20px 0;
+  background: #070806;
+  color: white;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+footer .container .footer-menus-wrap {
+  display: flex;
+}
+
+footer .container .footer-menus-wrap .footer-menu {
+  margin-right: 50px;
+}
+
+footer .container .footer-menu-heading {
+  color:white;
+}
+
+footer .container .footer-menu .footer-menu-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+footer .container .footer-menu .footer-menu-links-wrap {
+  text-align: center;
+}
+
+footer .container .footer-menu .footer-menu-links-wrap .footer-menu-link {
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+footer .container .footer-menu .footer-menu-links-wrap .footer-menu-link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+footer .container .footer-social-media .sm-heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+footer .container .footer-social-media .sm-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .container .footer-social-media .sm-wrap .footer-sm-link {
+  font-size: 3rem;
+  color:white;
+}
+
+
+@media (max-width: 1824px) {
+
+/*-----HEADER STYLES-----*/
+  header nav {
+    padding: 9px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    background: #070806;
+  }
+
+  header nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  header nav .container .logo {
+    font-family: 'Piedra', cursive;
+    color: #FFE816;
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+
+  header nav .container .desktop-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+              align-items: center;
+  }
+
+  header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link {
+    font-size: 1rem;
+    padding: 20px;
+    letter-spacing: .5px;
+    color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link:hover {
+    color: red;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .right-nav {
+    padding: 0px 10px;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .nav-icon {
+    cursor: pointer;
+    color: white;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .nav-bars {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+
+/*-----JUMBO STYLES-----*/
+
+  .jumbo {
+    position: relative;
+    background: #070806;
+    padding: 153px 0 0px 0;
+    height: 90vh;
+  }
+  
+  .jumbo .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .jumbo .container .jumbo-img{
+    height: 300px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-title {
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 0;
+    padding: 20px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-title .jumbo-title-span {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-btn {
+    padding: 25px 35px;
+    background: #E90046;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    border-radius: 70px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-btn:hover {
+    background: white;
+    color: #E90046;
+  }
+  
+  .jumbo .bottom-imgs-wrap {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    height: 10rem;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative {
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs-overlay {
+    position: absolute;
+    background: rgba(199, 176, 45, 0.404);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs {
+    width: 220px;
+  }
+  
+  .shopify-section{
+    padding: 0;
+  }
+
+
+/*-----PRODUCTS ROW STYLES-----*/
+  .products-row {
+    margin-top: 100px;
+  }
+
+  .products-row .container .brand-title {
+    font-size: 7.3rem;
+    color: #ababab;
+  }
+
+  .products-row .container .products-row-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .products-row .container .products-row-content .products-grid {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+  .products-row .container .products-row-content .products-grid .product-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-img {
+    width: 260px;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-title {
+    font-size: 1.5rem;
+    max-width: 80%;
+    text-align: center;
+    color: #474747;
+    height: 50px;
+    margin-bottom: 25px;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-price {
+    font-size: 1.5rem;
+  }
+
+  .products-row .container .products-row-content .products-brand-btn {
+    background-color: #e7507d;
+    padding: 10px 75px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 0;
+    transition: all 0.7s ease-in-out;
+
+  }
+
+  .products-row .container .products-row-content .products-brand-btn:hover {
+    background: white;
+    color: #e7507d;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  /*-----HEADER STYLES-----*/
+  header nav {
+    padding: 9px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    background: #070806;
+  }
+
+  header nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  header nav .container .logo {
+    font-family: 'Piedra', cursive;
+    color: #FFE816;
+    font-size: 1.8rem;
+    margin-right: 15px;
+  }
+
+  header nav .container .desktop-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+              align-items: center;
+  }
+
+  header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link {
+    font-size: 1.1rem;
+    padding: 20px;
+    letter-spacing: .5px;
+    color: white;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  header nav .container .desktop-menu .left-of-nav .nav-menu .nav-link:hover {
+    color: red;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .right-nav {
+    padding: 0px 10px;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .nav-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+
+  header nav .container .desktop-menu .right-of-nav .nav-bars {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+
+  /*-----JUMBO STYLES-----*/
+
+  .jumbo {
+    position: relative;
+    background: #070806;
+    padding: 123px 0 0px 0;
+    height: 90vh;
+  }
+  
+  .jumbo .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .jumbo .container .jumbo-img{
+    height: 300px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-title {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 0;
+    padding: 20px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-title .jumbo-title-span {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-btn {
+    padding: 25px 35px;
+    background: #E90046;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    border-radius: 70px;
+  }
+  
+  .jumbo .container .jumbo-content-wrap .jumbo-btn:hover {
+    background: white;
+    color: #E90046;
+  }
+  
+  .jumbo .bottom-imgs-wrap {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    height: 10rem;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative {
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs-overlay {
+    position: absolute;
+    background: rgba(199, 176, 45, 0.404);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+  }
+  
+  .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs {
+    width: 220px;
+  }
+  
+  .shopify-section{
+    padding: 0;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    /*-----JUMBO STYLES-----*/
+
+    .jumbo {
+      position: relative;
+      background: #070806;
+      padding: 123px 0 0px 0;
+      height: 90vh;
+    }
+    
+    .jumbo .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+    
+    .jumbo .container .jumbo-img{
+      height: 300px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 100px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-title {
+      color: white;
+      font-size: 2.8rem;
+      text-align: center;
+      font-family: 'Rock Salt', cursive;
+      letter-spacing: 0;
+      padding: 20px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-title .jumbo-title-span {
+      font-family: 'Rock Salt', cursive;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-btn {
+      margin-top: -20px;
+      padding: 25px 35px;
+      background: #E90046;
+      color: white;
+      font-size: 1.8rem;
+      text-align: center;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out;
+      border-radius: 70px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-btn:hover {
+      background: white;
+      color: #E90046;
+    }
+    
+    .jumbo .bottom-imgs-wrap {
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      height: 10rem;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative {
+      height: 100%;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs-overlay {
+      position: absolute;
+      background: rgba(199, 176, 45, 0.404);
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      max-width: 1200px;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs {
+      width: 220px;
+    }
+    
+    .shopify-section{
+      padding: 0;
+    }
+}
+
+@media (max-width: 880px) {
+
+    /*-----JUMBO STYLES-----*/
+
+    .jumbo {
+      position: relative;
+      background: #070806;
+      padding: 123px 0 0px 0;
+      height: 90vh;
+    }
+    
+    .jumbo .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+    }
+    
+    .jumbo .container .jumbo-img{
+      height: 300px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 100px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-title {
+      color: white;
+      font-size: 2.8rem;
+      text-align: center;
+      font-family: 'Rock Salt', cursive;
+      letter-spacing: 0;
+      padding: 8px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-title .jumbo-title-span {
+      font-family: 'Rock Salt', cursive;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-btn {
+      margin-top: -10px;
+      padding: 25px 35px;
+      background: #E90046;
+      color: white;
+      font-size: 1.8rem;
+      text-align: center;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out;
+      border-radius: 70px;
+    }
+    
+    .jumbo .container .jumbo-content-wrap .jumbo-btn:hover {
+      background: white;
+      color: #E90046;
+    }
+    
+    .jumbo .bottom-imgs-wrap {
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      height: 10rem;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative {
+      height: 100%;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs-overlay {
+      position: absolute;
+      background: rgba(199, 176, 45, 0.404);
+      z-index: 3;
+      width: 100%;
+      height: 80%;
+      margin-top: 32px;
+    }
+    
+    .jumbo .bottom-imgs-wrap .bottom-imgs-relative .bottom-imgs {
+      width: 220px;
+      height: 130px;
+      margin-top: 32px;
+    }
+    
+    .shopify-section{
+      padding: 0;
+    }
+
+
+/*-----DISCOUNT BANNER ROW STYLES-----*/
+
+  .discount-banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-top: 113px;
+  }
+
+  .discount-banner .discount-overlay {
+    background: rgba(21, 21, 21, 0.66);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .discount-banner .discount-overlay {
+    background: rgb(21, 21, 21);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .discount-banner .discount-content {
+    position: relative;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .discount-banner .discount-content .container {
+    width: 85%;
+    text-align: center;
+    position: relative;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text1 {
+    color:white;
+    font-size: 4.2rem;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text2 {
+    color:white;
+    font-size: 5rem;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text3 {
+    color:white;
+    font-size: 3rem;
+  }
+
+}
+
+
+@media (max-width: 778px) {
+
+    /*-----HEADER STYLES-----*/
+
+  header nav .container .desktop-menu .left-of-nav .nav-menu {
+    display: none;
+  }
+
+  header nav .container .desktop-menu .right-of-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+
+
+    /*-----JUMBO STYLES-----*/
+  .jumbo {
+    padding: 133px 0 600px 0;
+  }
+
+  .jumbo .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jumbo .container .jumbo-img {
+    height: 325px;
+  }
+  .jumbo .container .jumbo-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-title {
+    font-size: 3rem;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-btn {
+    font-size: 1.5rem;
+  }
+  .jumbo .bottom-imgs-wrap {
+    display: none;
+  }
+
+
+  /*-----PRODUCTS ROW STYLES-----*/
+  .products-row {
+    margin-top: 70px;
+  }
+
+  .products-row .container .brand-title {
+    font-size: 6rem;
+    color: #ababab;
+  }
+
+  .products-row .container .products-row-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .products-row .container .products-row-content .products-grid {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #474747;
+    height: 50px;
+  }
+
+  .products-row .container .products-row-content .products-grid .product-price {
+    font-size: 1.5rem;
+  }
+
+  .products-row .container .products-row-content .products-brand-btn {
+    background-color: #e7507d;
+    padding: 10px 75px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 0;
+    transition: all 0.7s ease-in-out;
+
+  }
+
+  .products-row .container .products-row-content .products-brand-btn:hover {
+    background: white;
+    color: #e7507d;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+
+
+
+  /*----- DISCOUNT ROW STYLES-----*/
+  .discount-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 113px;
+  }
+
+  .discount-banner .discount-overlay {
+    background: rgba(21, 21, 21, 0.66);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .discount-banner .discount-overlay {
+    background: rgb(21, 21, 21);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .discount-banner .discount-content {
+    position: relative;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .discount-banner .discount-content .container {
+    width: 85%;
+    text-align: center;
+    position: relative;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text1 {
+    color:white;
+    font-size: 3.7rem;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text2 {
+    color:white;
+    font-size: 4.5rem;
+  }
+
+  .discount-banner .discount-content .container .discount-content-text3 {
+    color:white;
+    font-size: 2.5rem;
+  }
+
+}
+
+@media (max-width: 744px) {
+
+  .site-header__cart-count{
+    height: calc(15em / 16);
+    min-width: calc(12em / 16);
+    top: calc(-1em / 16);
+  }
+}
+
+
+@media (max-width: 568px) {
+
+  .jumbo {
+    padding: 100px 0 600px 0;
+  }
+  .jumbo .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jumbo .container .jumbo-img {
+    height: 280px;
+  }
+  .jumbo .container .jumbo-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-title {
+    font-size: 3rem;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-btn {
+    font-size: 1.5rem;
+  }
+  .jumbo .bottom-imgs-wrap {
+    display: none;
+  }
+  .products-row .container .products-row-content .products-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .discount-banner {
+    height: 420px;
+  }
+  .discount-banner .discount-content .container {
+    width: 85%;
+    text-align: center;
+  }
+  .discount-banner .discount-content .container .discount-content-text1 {
+    font-size: 2.9rem;
+  }
+  .discount-banner .discount-content .container .discount-content-text2 {
+    font-size: 2.9rem;
+  }
+  .discount-banner .discount-content .container .discount-content-text3 {
+    font-size: 2rem;
+  }
+  footer .container .footer-menu .footer-menu-heading {
+    font-size: 1.6rem;
+  }
+  footer .container .footer-menu .footer-menu-links-wrap {
+    text-align: center;
+  }
+  footer .container .footer-menu .footer-menu-links-wrap .footer-menu-link {
+    font-size: .9rem;
+  }
+  footer .container .footer-social-media .sm-heading {
+    font-size: 2rem;
+  }
+  footer .container .footer-social-media .sm-wrap .footer-sm-link {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 474px) {
+
+  
+  .jumbo .container .jumbo-img {
+    height: 290px;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-title {
+    font-size: 2rem;
+  }
+  .jumbo .container .jumbo-content-wrap .jumbo-btn {
+    padding: 14px 30px;
+    font-size: 1.5rem;
+  }
+  .products-row {
+    margin-top: 80px;
+  }
+  .products-row .container .brand-title {
+    font-size: 4rem;
+  }
+  .products-row .container .products-row-content .products-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .products-row .container .products-row-content .products-grid .product-info .product-img {
+    width: 200px;
+  }
+  .products-row .container .products-row-content .products-grid .product-info .product-title {
+    font-size: 1rem;
+  }
+  .products-row .container .products-row-content .products-grid .product-info .product-price {
+    font-size: 1.3rem;
+  }
+  .discount-banner {
+    height: 290px;
+  }
+  .discount-banner .discount-content .container .discount-content-text1 {
+    font-size: 2rem;
+  }
+  .discount-banner .discount-content .container .discount-content-text2 {
+    font-size: 1.9rem;
+  }
+  .discount-banner .discount-content .container .discount-content-text3 {
+    font-size: 2rem;
+  }
+  footer .container {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+  }
+  footer .container .footer-menu {
+    margin-bottom: 30px;
+  }
+  footer .container .footer-menu .footer-menu-heading {
+    font-size: 1.6rem;
+  }
+  footer .container .footer-menu .footer-menu-links-wrap {
+    text-align: center;
+  }
+  footer .container .footer-menu .footer-menu-links-wrap .footer-menu-link {
+    font-size: .9rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

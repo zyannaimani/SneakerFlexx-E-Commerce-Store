@@ -1,0 +1,238 @@
+<style>
+    footer{
+        background-color: {{section.settings.color_footer_bg}};
+    }
+      
+      footer .container .footer-menu-heading {
+        color:{{section.settings.color_footer_menu_headings}};
+      }
+      
+      footer .container .footer-menu .footer-menu-links-wrap .footer-menu-link {
+        color:{{section.settings.color_footer_menu_links}};
+      }
+      
+</style>
+
+<footer>
+    <div class="container">
+        <div class="footer-menus-wrap">
+            {%for block in section.blocks%}
+            {%- assign footer_linklist = block.settings.menu -%}
+                <div class="footer-menu">
+                    <p class="footer-menu-heading">{{block.settings.title}}</p>
+                    {%- for link in linklists[footer_linklist].links -%}
+                        <ul class="footer-menu-links-wrap"> 
+                            <li><a href="" class="footer-menu-link">{{ link.title | escape }}</a></li>
+                        </ul>
+                    {%- endfor -%}
+                </div>
+            {%endfor%}
+        </div>
+        <div class="footer-social-media ">
+            <p class="sm-heading footer-menu-heading">Stay Connected</p>
+            <div class="sm-wrap">
+                {% if settings.social_facebook_link != blank %}
+                    <a href="{{settings.social_facebook_link}}" class="footer-sm-link">
+                        <i class="fa fa-facebook-official footer-sm-link" aria-hidden="true"></i>
+                    </a>
+                {%endif%}
+                {% if settings.social_instagram_link != blank %}
+                    <a href="{{settings.social_instagram_link}}" class="footer-sm-link">
+                        <i class="fa fa-instagram footer-sm-link" aria-hidden="true"></i>
+                    </a>
+                {%endif%}
+                {% if settings.social_twitter_link != blank %}
+                    <a href="{{settings.social_twitter_link}}" class="footer-sm-link">
+                        <i class="fa fa-twitter-square footer-sm-link" aria-hidden="true"></i>
+                    </a>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Sidefod",
+    "de": "Fußzeile",
+    "en": "Footer",
+    "es": "Pie de página",
+    "fi": "Alatunniste",
+    "fr": "Pied de page",
+    "hi": "फुटर",
+    "it": "Footer",
+    "ja": "フッター",
+    "ko": "바닥글",
+    "nb": "Footer",
+    "nl": "Voettekst",
+    "pt-BR": "Rodapé",
+    "pt-PT": "Rodapé",
+    "sv": "Sidfot",
+    "th": "ส่วนท้าย",
+    "zh-CN": "页脚",
+    "zh-TW": "頁尾"
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "header",
+      "content": {
+        "da": "Farve",
+        "de": "Farbe",
+        "en": "Color",
+        "es": "Color",
+        "fi": "Väri",
+        "fr": "Couleur",
+        "hi": "रंग",
+        "it": "Colore",
+        "ja": "色",
+        "ko": "색상",
+        "nb": "Farge",
+        "nl": "Kleur",
+        "pt-BR": "Cor",
+        "pt-PT": "Cor",
+        "sv": "Färg",
+        "th": "สี",
+        "zh-CN": "颜色",
+        "zh-TW": "顏色"
+      }
+    },
+    {
+      "type": "color",
+      "id": "color_footer_bg",
+      "label": {
+        "da": "Baggrund",
+        "de": "Hintergrund",
+        "en": "Background",
+        "es": "Fondo",
+        "fi": "Tausta",
+        "fr": "Couleur de fond",
+        "hi": "पृष्ठभूमि",
+        "it": "Sfondo",
+        "ja": "背景",
+        "ko": "배경",
+        "nb": "Bakgrunn",
+        "nl": "Achtergrond",
+        "pt-BR": "Plano de fundo",
+        "pt-PT": "Fundo",
+        "sv": "Bakgrund",
+        "th": "พื้นหลัง",
+        "zh-CN": "背景",
+        "zh-TW": "背景"
+      },
+      "default": "#070806"
+    },
+    {
+        "type": "color",
+        "id": "color_footer_menu_headings",
+        "label": "Footer Menu Headings",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_menu_links",
+        "label": "Footer Menu Menu Links",
+        "default": "#FFFFFF"
+      }
+  ],
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": {
+        "da": "Menu",
+        "de": "Menü",
+        "en": "Menu",
+        "es": "Menú",
+        "fi": "Valikko",
+        "fr": "Menu",
+        "hi": "मेनू",
+        "it": "Menu",
+        "ja": "メニュー",
+        "ko": "메뉴",
+        "nb": "Meny",
+        "nl": "Menu",
+        "pt-BR": "Menu",
+        "pt-PT": "Menu",
+        "sv": "Meny",
+        "th": "เมนู",
+        "zh-CN": "菜单",
+        "zh-TW": "選單"
+      },
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "da": "Overskrift",
+            "de": "Überschrift",
+            "en": "Heading",
+            "es": "Título",
+            "fi": "Otsake",
+            "fr": "Titre",
+            "hi": "शीर्षक",
+            "it": "Heading",
+            "ja": "見出し",
+            "ko": "제목",
+            "nb": "Overskrift",
+            "nl": "Kop",
+            "pt-BR": "Título",
+            "pt-PT": "Título",
+            "sv": "Rubrik",
+            "th": "ส่วนหัว",
+            "zh-CN": "标题",
+            "zh-TW": "標題"
+          },
+          "default": {
+            "da": "Hurtige links",
+            "de": "Quick-Links",
+            "en": "Quick links",
+            "es": "Enlaces rápidos",
+            "fi": "Pikalinkit",
+            "fr": "Liens rapides",
+            "hi": "त्वरित लिंक",
+            "it": "Link rapidi",
+            "ja": "クイックリンク",
+            "ko": "빠른 링크",
+            "nb": "Hurtigkoblinger",
+            "nl": "Snelle links",
+            "pt-BR": "Links rápidos",
+            "pt-PT": "Ligações rápidas",
+            "sv": "Snabblänkar",
+            "th": "ลิงก์ด่วน",
+            "zh-CN": "快速链接",
+            "zh-TW": "快速連結"
+          }
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": {
+            "da": "Menu",
+            "de": "Menü",
+            "en": "Menu",
+            "es": "Menú",
+            "fi": "Valikko",
+            "fr": "Menu",
+            "hi": "मेनू",
+            "it": "Menu",
+            "ja": "メニュー",
+            "ko": "메뉴",
+            "nb": "Meny",
+            "nl": "Menu",
+            "pt-BR": "Menu",
+            "pt-PT": "Menu",
+            "sv": "Meny",
+            "th": "เมนู",
+            "zh-CN": "菜单",
+            "zh-TW": "選單"
+          },
+          "default": "footer"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

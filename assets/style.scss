@@ -1,0 +1,581 @@
+/*-----GLOBAL STYLES-----*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+.container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn{
+    background: gray;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+li{
+    list-style: none;
+}
+
+/*-----HEADER STYLES-----*/
+header{
+    nav{
+        padding: 9px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 200;
+        background: #070806; 
+        .container{
+            display: flex;
+            align-items: center;
+            .logo{
+                font-family: 'Piedra', cursive;
+                color:#FFE816;
+                font-size: 1.6rem;
+                margin-right: 15px;
+            }
+            .desktop-menu{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .left-of-nav{
+                    .nav-menu{
+                        .nav-link{
+                            padding:20px;
+                            letter-spacing: .5px;
+                            color: white;
+                            transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+                        }
+                        .nav-link:hover{
+                            color:red;
+                        }
+                    }
+                }
+                .right-of-nav{
+                    .right-nav{
+                        padding: 0px 10px;
+                    }
+                    .nav-icon{
+                        font-size: 25px;
+                        cursor: pointer;
+                        color:white;
+                    }
+                    .nav-bars{
+                        color:white;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----HERO STYLES-----*/
+.hero{
+    position: relative;
+    background: #070806;
+    padding: 133px 0 121px 0;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        .hero-img{
+            height: 385px;
+        }
+        .hero-content-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 80px;
+            .hero-title{
+                color:white;
+                font-size: 4rem;
+                text-align: center;
+                font-family: 'Rock Salt', cursive;
+                .hero-title-span{
+                    font-family: 'Rock Salt', cursive;
+                }
+            }
+            .hero-btn{
+                padding: 20px 30px;
+                background: #E90046;
+                color:white;
+                font-size: 1.8rem;
+                text-align: center;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+            }
+            .hero-btn:hover{
+                background: white;
+                color: #E90046;
+            }
+        }
+    }
+    .bottom-imgs-wrap{
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        display: flex;
+        justify-content: end;
+        height: 10rem;
+
+        .bottom-imgs-relative{
+            height: 100%;
+            position: relative;
+            display: flex;
+
+            .bottom-imgs-overlay{
+                position: absolute;
+                background: rgba(199, 176, 45, 0.404);
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                max-width: 1200px;
+            }
+            .bottom-imgs{
+                width: 220px;
+            }
+        }
+    }
+}
+
+/*-----PRODUCTS ROW STYLES-----*/
+.products-row{
+    margin-top: 113px;
+    .container{
+        .brand-title{
+            font-size: 6rem;
+            color:#ababab;
+        }
+        .products-row-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .products-grid{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .product-info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .product-title{
+                    font-size: 1.2rem;
+                    max-width: 80%;
+                    text-align: center;
+                    color:#474747;
+                }
+
+                .product-price{
+                    font-size: 1.5rem;
+                }
+            }
+            .products-brand-btn{
+                background-color: #ffa216;
+                padding: 10px 75px;
+                text-align: center;
+                margin-top: 25px;
+                font-size: 1.4rem;
+                color:white;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            .products-brand-btn:hover{
+                background: white;
+                color:#ffa216;
+                transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+            }
+        }
+    }
+}
+
+/*-----DISCOUNT BANNER ROW STYLES-----*/
+.discount-banner{
+    position: relative;
+    background-image: url(../imgs/discount-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin-top: 113px;
+
+    .discount-overlay{
+        background: rgba(21, 21, 21, 0.66);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .discount-content{
+        position: relative;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .container{
+            width: 85%;
+            text-align: center;
+
+            .discount-content-text1{
+                font-size: 5.2rem;
+            }
+            .discount-content-text2{
+                font-size: 5.3rem;
+            }
+            .discount-content-text3{
+                font-size: 3.4rem;
+            }
+        }
+    }
+}
+
+/*-----FOOTER STYLES-----*/
+footer{
+    margin-top: 75px;
+    padding: 20px 0;
+    background: #070806;
+    color:white;
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .footer-menu{
+            .footer-menu-heading p{
+                color: white;
+                font-size: 2rem; 
+                text-align: center;
+            }
+            .footer-menu-links-wrap{
+                text-align: center;
+                .footer-menu-link{
+                    color: white;
+                    font-size: 1.1rem;
+                    transition: all 0.7s cubic-bezier(.25,.8,.25,1);
+                }
+                .footer-menu-link:hover{
+                    text-decoration: underline;
+                    color:red;
+                }
+            }
+        }
+        .footer-social-media{
+            .sm-heading{
+                font-size: 3rem;
+            }
+
+            .sm-wrap{
+                display: flex;
+                justify-content: space-evenly;
+                .footer-sm-link{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .hero{
+        .container{
+            .hero-content-wrap{
+                .hero-title{
+                    font-size: 3.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+header{
+    nav{
+        .container{
+            .desktop-menu{
+                .left-of-nav{
+                    .nav-menu{
+                        display: none;
+                        .nav-link{
+                            display: flex;
+                        }
+                        .nav-link:hover{
+                            background-color: red;
+                        }
+                    }
+                }
+                .right-of-nav{
+                    display: flex;
+                    .nav-bars{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .nav-menu-mobile{
+                        display: none;
+                        .nav-link-mobile{
+                            padding: 20px;
+                            color:#333;
+                            transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+                        }
+                        .nav-link-mobile:hover{
+                            color:white;
+                            background-color: red;
+                        }
+                    }
+                    .nav-menu-mobile.active{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 40px;
+                        position: absolute;
+                        background-color: white;
+                        text-align: center;
+                        border: solid 1px rgba(128, 128, 128, 0.384);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .hero{
+        .container{
+            margin-bottom: 20px;
+            .hero-img{
+                height: 370px;
+            }
+            .hero-content-wrap{
+                .hero-title{
+                   font-size: 2.4rem;
+                }
+            }
+        }
+        .bottom-imgs-wrap{
+            height: 8rem;
+        }
+    }
+
+    .products-row{
+        .container{
+                .products-row-content{
+                    .products-grid{
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+        }
+    }
+
+    .discount-banner{
+        position: relative;
+        background-image: url(../imgs/discount-bg.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 480px;
+        margin-top: 113px;
+    
+        .discount-overlay{
+            background: rgba(21, 21, 21, 0.66);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .discount-content{
+            .container{
+                .discount-content-text1{
+                    font-size: 4.3rem;
+                }
+                .discount-content-text2{
+                    font-size: 4.5rem;
+                }
+                .discount-content-text3{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 568px){
+    .hero{
+        padding: 133px 0 0 0;
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .hero-img{
+                height: 325px;
+            }
+            .hero-content-wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .hero-title{
+                    font-size: 3rem;
+                }
+                .hero-btn{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .bottom-imgs-wrap{
+            display: none;
+        }
+    }
+
+    .products-row{
+        .container{
+                .products-row-content{
+                    .products-grid{
+                        grid-template-columns: 1fr ;
+                    }
+                }
+            }
+        }
+
+    .discount-banner{
+        height: 420px;
+        .discount-content{
+            .container{
+                width: 85%;
+                text-align: center;
+                .discount-content-text1{
+                    font-size: 2.9rem;
+                }
+                .discount-content-text2{
+                    font-size: 2.9rem;
+                }
+                .discount-content-text3{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            .footer-menu{
+                .footer-menu-heading{
+                    font-size: 1.6rem; 
+                }
+                .footer-menu-links-wrap{
+                    text-align: center;
+                    .footer-menu-link{
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .footer-social-media{
+                .sm-heading{
+                    font-size: 2rem;
+                }
+                .sm-wrap{
+                    .footer-sm-link{
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px){
+    .hero{
+        .container{
+            .hero-img{
+                height: 290px;
+            }
+            .hero-content-wrap{
+                .hero-title{
+                    font-size: 2rem;
+                }
+                .hero-btn{
+                    padding: 14px 30px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .products-row{
+        margin-top: 80px;
+        .container{
+            .brand-title{
+                font-size:4rem;
+            }
+            .products-row-content{
+                .products-grid{
+                    grid-template-columns: 1fr ;
+                    .product-info{
+                        .product-img{
+                            width: 200px;
+                        }
+                        .product-title{
+                            font-size:1rem ;
+                        }
+                        .product-price{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .discount-banner{
+        height: 390px;
+        .discount-content{
+            .container{
+                .discount-content-text1{
+                    font-size: 2rem;
+                }
+                .discount-content-text2{
+                    font-size: 1.9rem;
+                }
+                .discount-content-text3{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            display: flex;
+            flex-direction: column;
+            .footer-menu{
+                margin-bottom: 30px;
+                .footer-menu-heading{
+                    font-size: 1.6rem; 
+                }
+                .footer-menu-links-wrap{
+                    text-align: center;
+                    .footer-menu-link{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
